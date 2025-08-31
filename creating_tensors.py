@@ -25,3 +25,9 @@ print(matrix_with_at)
 # Umformen einer Matrix
 viewed = tensor2d.view(1,6)
 print(viewed)
+
+# genauso geht es auch mit der Funktion aus numpy:
+# Der einzige Unterschied besteht darin, dass reshape Vektoren ergänzt, während view
+# abbricht, wenn die neue Dimension nicht passt.
+reshaped = tensor2d.reshape(1,6)
+print(reshaped)
